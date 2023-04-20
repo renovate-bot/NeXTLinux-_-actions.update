@@ -1,4 +1,4 @@
-# actions.update [![Version][version-badge]][version-url] [![Lint status][workflow-badge]][workflow-url]
+# actions.update [![Lint status][workflow-badge]][workflow-url]
 
 Update (i.e. commit and push) files on GitHub.
 
@@ -10,7 +10,7 @@ The action requires GitHub token for authentication; no username or e-mail are r
 
 ### Basic usage
 
-Here is an example of a workflow using `action-update-file`:
+Here is an example of a workflow using `actions_update`:
 
 ```yml
 name: Resources
@@ -59,7 +59,7 @@ The action supports glob patterns as well:
 
 ```yml
 - name: Update resources
-  uses: nextlinux/action-update-file@v1
+  uses: nextlinux/actions.update@v1
   with:
       # Include all JS files from the `dist` directory
       file-path: dist/*.js
@@ -110,6 +110,6 @@ Don't push dist files; they're updated automatically by the action itself.
 ## License
 
 Licensed under the [MIT License](./LICENSE.md).
-[version-url]: https://github.com/marketplace/actions/update-files-on-github
-[workflow-badge]: https://img.shields.io/github/workflow/status/test-room-7/action-update-file/Lint?label=lint
-[workflow-url]: https://github.com/test-room-7/action-update-file/actions
+[version-url]: https://github.com/marketplace/actions/actions.update
+[workflow-badge]: https://img.shields.io/github/workflow/status/nextlinux/actions.update/Lint?label=lint
+[workflow-url]: https://github.com/nextlinux/actions.update/actions
