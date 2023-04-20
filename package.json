@@ -1,0 +1,48 @@
+{
+  "name": "actions.update",
+  "version": "1.0.0",
+  "description": "Update Github File (Actions to Commit & push)",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dist": "tsc && ncc build build/main.js",
+    "lint": "eslint --ext .ts src",
+    "version": "npm run build && git add dist"
+  },
+  "prettier": "prettier-config-web-scrobbler",
+  "eslintConfig": {
+    "extends": "web-scrobbler/typescript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeXTLinux/actions.update.git"
+  },
+  "keywords": [
+    "actions",
+    "github",
+    "pull",
+    "push",
+    "workflows"
+  ],
+  "author": "NeXTLinux",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NeXTLinux/actions.update/issues"
+  },
+  "homepage": "https://github.com/NeXTLinux/actions.update#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fast-glob": "^3.2.12"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.12",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "@vercel/ncc": "^0.36.1",
+    "eslint": "^8.38.0",
+    "eslint-config-web-scrobbler": "^2.1.1",
+    "prettier": "^2.8.7",
+    "prettier-config-web-scrobbler": "^0.1.0",
+    "typescript": "^5.0.4"
+  }
+}
