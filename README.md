@@ -1,4 +1,4 @@
-# actions.update [![Lint status][workflow-badge]][workflow-url]
+# actions.update
 
 Update (i.e. commit and push) files on GitHub.
 
