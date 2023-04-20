@@ -1,5 +1,5 @@
-name: actions.update
-description: Update Github File (Actions to Commit & push)
+name: Actions Update
+description: Update (i.e. commit and push) files on GitHub
 author: NeXTLinux
 inputs:
   # Required
